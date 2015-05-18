@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kuanxue.kxw.view.fragment.SettingsFragment">
+
+    <!--<include-->
+        <!--layout="@layout/layout_titles"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/main_top" />-->
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="设置" />-->
+    <!-- 发现课程，我的课程，发布课程-->
+    <LinearLayout
+        android:id="@+id/more_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_top"
+        android:background="@drawable/img_title_background"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_more_titlename"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:gravity="center"
+            android:text="设置"
+            android:layout_weight="3"
+            />
+        <ImageView
+            android:id="@+id/iv_more_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</FrameLayout>

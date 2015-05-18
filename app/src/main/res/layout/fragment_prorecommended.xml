@@ -1,0 +1,167 @@
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--<include-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/main_top"-->
+        <!--layout="@layout/layout_titles"-->
+        <!--/>-->
+        <!--精品课程
+        -->
+        <LinearLayout
+            android:id="@+id/single_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top"
+            android:background="@drawable/img_title_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_single_titlename"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_top"
+                android:gravity="center"
+                android:text="精品课程" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/img_hotclass" />
+
+        <com.kuanxue.kxw.widget.xlistview.XListView
+            android:id="@+id/lv_prorecommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="2dp"
+            android:divider="@drawable/img_listview_line"></com.kuanxue.kxw.widget.xlistview.XListView>
+    </LinearLayout>
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--隐藏部分-->
+    <com.kuanxue.kxw.viewdrag.YoutubeLayout
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="195dp" />
+
+        <LinearLayout
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/tab_middle_line_color"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tab_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/tab_middle_line_color" />
+
+                <TextView
+                    android:id="@+id/tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/tab_middle_line_color" />
+
+                <TextView
+                    android:id="@+id/tab_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cursor"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_selected_bg" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/tab_selected_bg"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/tab_selected_bg"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#CFCFCF" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:persistentDrawingCache="animation"
+                android:orientation="vertical"
+                android:layout_weight="6.80" />
+        </LinearLayout>
+
+    </com.kuanxue.kxw.viewdrag.YoutubeLayout>
+    <!--</ScrollView>-->
+</FrameLayout>
+

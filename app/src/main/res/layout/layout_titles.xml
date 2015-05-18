@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <!--精品课程
+    -->
+    <LinearLayout
+        android:id="@+id/single_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_top"
+        android:background="@drawable/img_title_background"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_single_titlename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top"
+            android:gravity="center"
+            android:text="精品课程" />
+    </LinearLayout>
+    <!-- 发现课程，我的课程，发布课程-->
+    <LinearLayout
+        android:id="@+id/more_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_top"
+        android:background="@drawable/img_title_background"
+        android:visibility="gone"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_more_titlename"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:gravity="center"
+            android:text="我的课程"
+            android:layout_weight="3"
+            />
+        <ImageView
+            android:id="@+id/iv_more_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_top"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

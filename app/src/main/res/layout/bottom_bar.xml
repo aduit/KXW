@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 导航 按钮
+     android:background="@drawable/layout_border"
+-->
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_bottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_prorecommended"
+        style="@style/bottomBar_btn"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="精品推荐"
+        android:gravity="center"
+        android:background="@drawable/img_btn_selector"
+        android:textSize="18sp" />
+
+    <!--<View-->
+        <!--android:layout_width="0.5dp"-->
+        <!--android:layout_height="@dimen/main_bottom"-->
+        <!--android:background="@color/black" />-->
+
+    <RadioButton
+        android:id="@+id/rb_foundsource"
+        style="@style/bottomBar_btn"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="发现课程"
+        android:gravity="center"
+
+        android:background="@drawable/img_btn_selector"
+        android:textSize="18sp"
+
+        />
+
+    <!--<View-->
+        <!--android:layout_width="0.5dp"-->
+        <!--android:layout_height="@dimen/main_bottom"-->
+        <!--android:background="@color/black" />-->
+
+    <RadioButton
+        android:id="@+id/rb_mycourse"
+        style="@style/bottomBar_btn"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:background="@drawable/img_btn_selector"
+        android:text="我的课程"
+        android:textSize="18sp" />
+    <!--<View-->
+        <!--android:layout_width="0.5dp"-->
+        <!--android:layout_height="@dimen/main_bottom"-->
+        <!--android:background="@color/black" />-->
+
+    <RadioButton
+        android:id="@+id/rb_settings"
+        style="@style/bottomBar_btn"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/img_btn_selector"
+        android:text="设置"
+        android:textSize="18sp"
+
+        />
+
+</RadioGroup>
